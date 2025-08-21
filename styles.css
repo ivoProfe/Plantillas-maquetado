@@ -1,0 +1,85 @@
+:root {
+  --bg: #555;
+  --primary: #abe0e5;
+  --secondary: #cccbca;
+  --contrast: #ffffff;
+  --contrast2: #e6e5e5;
+
+  --color-feo: lime;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cuadrado {
+  background-color: var(--primary);
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.arriba {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  background-color: peru;
+
+  .logo{
+
+  }
+
+  .carrousel {
+    background-color: var(--contrast);
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.medio {
+  width: 100%;
+  height: 60vh;
+
+  display: flex;
+  gap: .5rem;
+
+  &>* {
+    height: 100%;
+    width: 50%;
+    background-color: peru;
+  }
+
+  .noticia {
+    background-color: var(--contrast2);
+  }
+
+  .relacionadas {
+    background-color: var(--contrast);
+  }
+}
+
+.abajo {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+
+  .eso{
+
+  }
+
+  .galeria{
+    background-color: var(--contrast2);
+    height: 100%;
+    width: 100%;
+  }
+}
